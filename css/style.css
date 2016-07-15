@@ -1,0 +1,222 @@
+@import url("animations.css");
+@import url("panel.css");
+
+/* GENERAL */
+body {
+	position:			absolute;
+	font-family: 		Calibri, Arial, sans-serif;
+	color:				#fff;
+	width:				50%;
+	left:				25%;
+	padding:			0;
+	margin:				0;
+	border:				0;
+	font-size:			1em;
+}
+
+p.center, h1.center {
+	text-align: 	center;
+	width:			80%;
+	margin:			0 auto;
+}
+
+p.italic {
+	font-style:	italic;
+}
+
+h1.nooffset, h2.nooffset, h3.nooffset {
+	padding:	0;
+	margin:		0;
+}
+
+div.headline1 {
+	display:		inline-block;
+	padding-top:	1vh;
+	padding-left:	1vw;
+	font-size: 		250%;
+}
+span.headline2 {
+	display:		block;
+	margin-top:		0;
+	margin-left:	0;
+	font-size:		200%;
+}
+span.subline1 {
+	display:		block;
+	margin-top:		0;
+	margin-left:	1vw;
+	font-style: 	italic;
+	font-size:		125%;
+}
+
+input[type="button"].standard, input[type="submit"].standard {
+	text-transform: 	uppercase;
+	font-size: 			150%;
+	background:			transparent;
+	border:				0;
+	color:				#fff;
+	padding-top:		0.45vh;
+	/*margin-top:			0.5vh; */
+	/* border-top:	5px solid #4472b9; */
+}
+input[type="button"].standard:hover, input[type="submit"].standard:hover {
+	border-top:		0.5vh solid #4472b9;
+	padding-top:	0vh;
+}
+
+img.shadowed {
+	box-shadow:	3px 3px 5px #000 ;
+}
+
+span.btnsocial {
+	display:		inline-block;
+	padding: 		2px;
+	margin-left: 	1vw;
+	margin-top:		1.5vh;
+}
+
+/* HEADER */
+header {
+	margin: 			0;
+	padding: 			0;
+	height: 			17vh;
+	background-color: 	#222;
+}
+ul#navheader {
+	display:			inline;
+	list-style-type: 	none;
+	overflow: 			hidden;
+	height: 			33.3333%;
+	width: 				100%;
+	margin-right:		20%;
+}
+ul#navheader li {
+	float: 			right;
+	width: 			15%;
+	min-width:		150px;
+}
+
+/* CONTENT */
+div#content {
+	height: 			78vh;
+	margin: 			0;
+	padding: 			0;
+	background-color: 	#444;
+	text-align: 		center;
+}
+
+div#imgslideshow {
+	margin: 		0 auto;
+	padding:		1vw;
+}
+
+img.slideshow {
+	width:		80%;
+	height:		33.75%;
+	padding:	0;
+	margin:		0;
+}
+
+input[type="button"].green, input[type="submit"].green {
+	/* border-top:	5px solid #4ca454; */
+}
+input[type="button"].green:hover, input[type="submit"].green:hover {
+	border-top:	0.5vh solid #4ca454;
+}
+
+/* FOOTER */
+footer {
+	margin: 			0;
+	padding:			0;
+	height:				5vh;
+	background-color:	#222;
+}
+ul#navfooter {
+	list-style-type: 	none;
+	margin: 			auto;
+	padding: 			0;
+	overflow: 			hidden;
+	height: 			100%;
+	width: 				100%;
+}
+ul#navfooter li {
+	float: 				left;
+	width: 				33.3333%;
+	height: 			100%;
+	text-align: 		center;
+	padding-top:		1vh;
+}
+
+/* PANEL */
+input[type="text"].panel, input[type="password"].panel {
+	width: 10vw;
+}
+input[type="submit"].panel {
+	display:			block;
+	font-size: 			100%;
+	margin:				0 auto;
+	padding-top:		0.45vh;
+	margin-top:			0.5vh;
+}
+div#panellogin {
+	left:		60.5vw;
+	top:		-33vh;
+}
+div#panelregister {
+	left:		60.5vw;
+	top:		-58vh;
+}
+
+div.panelcenter > input[type="button"].btnClose {
+	display:			      inline;
+	margin-left:		    85%;
+	background-image: 	url("../img/btnClose.jpg");
+	padding:			      0;
+	width:				      23px;
+	height:				      23px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 960px), only screen and (max-height: 768px) {
+	body {
+		position:			  absolute;
+		font-family: 		Calibri, Arial, sans-serif;
+		color:				  #fff;
+		width:				  100%;
+		left:				    0%;
+		padding:			  0;
+		margin:				  0;
+		border:				  0;
+
+		font-size: 			1em;
+	}
+	ul#navheader li {
+		width: 			15%;
+		min-width:		150px;
+		height: 		100%;
+	}
+}
+@media only screen and (max-height: 768px) {
+	body {
+		font-size: 	0.75em;
+	}
+	img.slideshow {
+		width:		40%;
+		height:		17%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		position:			absolute;
+		font-family: 		Calibri, Arial, sans-serif;
+		color:				#fff;
+		width:				100%;
+		left:				0%;
+		padding:			0;
+		margin:				0;
+		border:				0;
+
+		font-size: 			0.75em;
+	}
+}

@@ -1,0 +1,78 @@
+/* PANEL MOVE IN */
+@keyframes panelmovein {
+	from { transform: translateY( 0vh); }
+	to   { transform: translateY(50vh); }
+}
+@-webkit-keyframes panelmovein {
+	from { transform: translateY( 0vh); }
+	to   { transform: translateY(50vh); }
+}
+@-o-keyframes panelmovein {
+	from { transform: translateY( 0vh); }
+	to   { transform: translateY(50vh); }
+}
+/* PANEL MOVE OUT */
+@keyframes panelmoveout {
+	from { transform: translateY(50vh); }
+	to   { transform: translateY( 0vh); }
+}
+@-webkit-keyframes panelmoveout {
+	from { transform: translateY(50vh); }
+	to   { transform: translateY( 0vh); }
+}
+@-o-keyframes panelmoveout {
+	from { transform: translateY(50vh); }
+	to   { transform: translateY( 0vh); }
+}
+/* PANEL MOVE IN FAR */
+@keyframes panelmoveinfar {
+	from { transform: translateY( 0vh); }
+	to   { transform: translateY(75vh); }
+}
+@-webkit-keyframes panelmoveinfar {
+	from { transform: translateY( 0vh); }
+	to   { transform: translateY(75vh); }
+}
+@-o-keyframes panelmoveinfar {
+	from { transform: translateY( 0vh); }
+	to   { transform: translateY(75vh); }
+}
+/* PANEL MOVE OUT FAR */
+@keyframes panelmoveoutfar {
+	from { transform: translateY(75vh); }
+	to   { transform: translateY( 0vh); }
+}
+@-webkit-keyframes panelmoveoutfar {
+	from { transform: translateY(75vh); }
+	to   { transform: translateY( 0vh); }
+}
+@-o-keyframes panelmoveoutfar {
+	from { transform: translateY(75vh); }
+	to   { transform: translateY( 0vh); }
+}
+/* PANEL MOVE IN MAX */
+@keyframes panelmoveinmax {
+	from { transform: translateY(  0vh); }
+	to   { transform: translateY(100vh); }
+}
+@-webkit-keyframes panelmoveinmax {
+	from { transform: translateY(  0vh); }
+	to   { transform: translateY(100vh); }
+}
+@-o-keyframes panelmoveinmax {
+	from { transform: translateY(  0vh); }
+	to   { transform: translateY(100vh); }
+}
+/* PANEL MOVE OUT MAX */
+@keyframes panelmoveoutmax {
+	from { transform: translateY(100vh); }
+	to   { transform: translateY(  0vh); }
+}
+@-webkit-keyframes panelmoveoutmax {
+	from { transform: translateY(100vh); }
+	to   { transform: translateY( 0vh);  }
+}
+@-o-keyframes panelmoveoutmax {
+	from { transform: translateY(100vh); }
+	to   { transform: translateY(  0vh); }
+}

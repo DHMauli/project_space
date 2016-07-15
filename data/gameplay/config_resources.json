@@ -1,0 +1,1 @@
+{"metal":{"prodType":"inc"},"crystal":{"prodType":"inc"},"methane":{"prodType":"inc"},"food":{"prodType":"inc"},"water":{"prodType":"inc"},"energyproduction":{"prodType":"fixed"},"energyconsumption":{"prodType":"fixed"},"population":{"prodType":"fixed","influenced":{"res":"food","amount":-0.01}},"employed":{"prodType":"fixed"},"unemployed":{"prodType":"fixed"}}

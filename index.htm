@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="de">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<!-- Add real name -->
+		<meta name="author" content="Mauli">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<meta http-equiv="language" content="de">
+		<meta http-equiv="content-language" content="de">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+		<script src="js/animation_handling.js"></script>
+
+		<title>Startseite</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="headline1">IPSUM LOREM - GAME</div><br>
+			<span class="subline1">Best Game ever seen</span><br>
+			<span class="btnsocial">
+				<a href="https://www.facebook.com/">
+					<img src="img/btnFb.jpg" alt="btnFacebook">
+				</a>
+				<a href="https://twitter.com/" class="btnsocial">
+					<img src="img/btnTwitter.jpg" alt="btnTwitter">
+				</a>
+			</span>
+			<ul id="navheader">
+				<li><input type="button" value="sign up" class="standard green" id="register"></li>
+				<li><input type="button" value="login" class="standard green" id="login"></li>
+			</ul>
+		</header>
+
+		<div class="container" id="panellogin">
+			<div class="panelcenter">
+				<input class="btnClose" type="button" value="">
+				<form action="php/indexpage/login.php" method="post" name="formLogin">
+					<label for="email1">E-Mail</label><br>
+					<input class="panel" type="text" name="email1" placeholder="still empty..." accesskey="n">
+					<br>
+					<label for="pass1">Passwort</label><br>
+					<input class="panel" type="password" name="pass1" placeholder="still empty..." accesskey="p">
+					<input class="standard green panel" id="login" type="submit" name="submitRegister" value="login">
+				</form>
+			</div>
+		</div>
+
+		<div class="container" id="panelregister">
+			<div class="panelcenter">
+				<input class="btnClose" type="button" value="">
+				<form action="php/indexpage/register.php" method="post" name="formRegister">
+					<label for="nickname">Name</label><br>
+					<input class="panel" type="text" name="nickname" placeholder="still empty..." accesskey="n">
+					<br>
+					<label for="email1">E-Mail</label><br>
+					<input class="panel" type="text" name="email1" placeholder="still empty..." accesskey="e">
+					<br>
+					<label for="email2">E-Mail wiederholen</label><br>
+					<input class="panel" type="text" name="email2" placeholder="still empty..." accesskey="e">
+					<br>
+					<label for="pass1">Passwort</label><br>
+					<input class="panel" type="password" name="pass1" placeholder="still empty..." accesskey="p">
+					<br>
+					<label for="pass2">Passwort wiederholen</label><br>
+					<input class="panel" type="password" name="pass2" placeholder="still empty..." accesskey="p">
+					<br>
+					<input class="standard green panel" id="register" type="submit" name="submitRegister" value="sign up">
+				</form>
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="imgslideshow">
+				<img src="img/imgslideshow_test.png" alt="imgslideshowtest" class="shadowed slideshow">
+			</div>
+			<span class="headline2">DU BIST <span style="font-weight: bold;">COREGAMER</span>?</span>
+			<p class="center" style="font-size: 1.25em;">Du bist <strong>Coregamer</strong>? Du hast die Nase voll von Comic-Style, Cellshading-Look, f2p, p2w und casual? <strong>Real Life</strong> findest du eher <strong>langweilig</strong> und du hast mindestens <strong>acht Stunden überflüssige Zeit am Tag</strong>? Du bist der Meinung, dass <strong>Schlafen eher nebensächlich</strong> ist und du dafür noch genug Zeit nach deinem Ableben hast? <strong>„Nerd“</strong> ist für dich keine Beleidigung, sondern Teil deiner <strong>Lebensphilosophie</strong>? Für das Schlüpfen in fiktive Welten benötigst du schon lange kein Gleitgel mehr? Du siehst dich als <strong>Conaisseur guter Browserspiele</strong>?</p>
+
+			<br>
+			<a href="htm/main.php">Debug Link</a>
+		</div>
+		<footer>
+			<ul id="navfooter">
+				<li><input type="button" value="team" class="standard"></li>
+				<li><input type="button" value="impressum" class="standard"></li>
+				<li><input type="button" value="kontakt" class="standard"></li>
+			</ul>
+		</footer>
+	</body>
+</html>

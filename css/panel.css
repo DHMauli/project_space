@@ -1,0 +1,20 @@
+div.container {
+	/* fixed position a zero-height full width container */
+	background-color: 	transparent;
+	position: 			    fixed;
+	/* center all inline */
+	/*text-align: 		    center;*/
+	pointer-events: 	  none;
+	z-index:			      1;
+}
+div.container > div.panelcenter {
+	background-color: 	#555;
+	padding-top:		    2vh;
+	padding-bottom:		  2vh;
+	padding-left:		    2vw;
+	padding-right:		  2vw;
+  box-shadow:         3px 3px 5px #000;
+  display:            block;
+	overflow: 			    hidden;
+	pointer-events: 	  all;
+}

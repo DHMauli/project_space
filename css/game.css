@@ -1,0 +1,376 @@
+@import url("panel.css");
+
+/* GENERAL */
+
+html {
+  height:             100%;
+  width:              100%;
+  font-size:          100%;
+}
+
+body {
+	background-color: 	#fff;
+  background-image:   url(../img/ui/body_background.jpg);
+  width:              100%;
+  height:             100%;
+	margin:				      0;
+	padding:			      0;
+  font-size:          1em;
+}
+
+/* GENERAL CLASSES */
+
+.borderTopBottom {
+  border-top:             2px solid #000;
+  border-bottom:          2px solid #000;
+	box-sizing:					    border-box;
+	-moz-box-sizing:			  border-box;
+	-webkit-box-sizing:			border-box;
+}
+.transparentBackground {
+  background-color:       transparent;
+}
+
+/* HEADER */
+
+header {
+  height:   12%;
+  width:   100%;
+}
+
+div#resbar {
+	height: 			          100%;
+  width:                  100%;
+	background-color:       transparent;
+	color:				          #fff;
+  padding:                1%;
+  font-family:            Monospace;
+  font-size:              1.2em;
+	box-sizing:					    border-box;
+	-moz-box-sizing:			  border-box;
+	-webkit-box-sizing:			border-box;
+}
+ul#resbar {
+  list-style-type:  none;
+  margin:           0 auto;
+  padding:          0;
+  overflow:         hidden;
+  height:           100%;
+}
+ul#resbar > li {
+  float:            left;
+  height:           100%;
+}
+ul.stylenone {
+  list-style-type:  none;
+}
+
+/* CONTENT */
+
+div#content {
+	width:			100%;
+  height:     78%;
+	margin:			0;
+  padding:    0;
+}
+
+div#column-left {
+  float:            left;
+  width:            15%;
+  height:           100%;
+}
+div#column-middle {
+  float:            left;
+  width:            70%;
+  height:           100%;
+}
+div#column-right {
+  float:            left;
+  width:            15%;
+  height:           100%;
+}
+
+div#sidemenu-left {
+	width:				          88%;
+	height:				          100%;
+	background-color:	      transparent;
+	color:				          #fff;
+	margin:				          0;
+	padding:			          0;
+	float:				          left;
+	padding-left:		        1vw;
+	padding-top:		        1vh;
+	box-sizing:					    border-box;
+	-moz-box-sizing:			  border-box;
+	-webkit-box-sizing:			border-box;
+  display:                inline-block;
+}
+img.process {
+  padding:  0;
+  margin:   0;
+  border:   none;
+  display:  block;
+}
+input[type="button"]#btnleft {
+  width:         12%;
+  height:       100%;
+  float:        left;
+  opacity:      0.5;
+}
+
+input[type="button"]#btnright {
+  width:        12%;
+  height:      100%;
+  opacity:      0.5;
+}
+div#sidemenu-right {
+	width:				          88%;
+	height:				          100%;
+	background-color:	      transparent;
+	color:				          #fff;
+	margin:				          0;
+	padding:			          0;
+	float:				          right;
+	text-align: 		        center;
+	padding-top:		        1vh;
+	box-sizing:					    border-box;
+	-moz-box-sizing:			  border-box;
+	-webkit-box-sizing:			border-box;
+}
+div.clickmenu {
+	width:				          100%;
+  height:                 40%;
+	color:				          #000;
+  overflow:               auto;
+	text-align: 		        center;
+	display:			          none;
+  position:               relative;
+}
+span#clickmenulabel {
+  display:                block;
+}
+span.buildbutton {
+  width:                  46.25%;
+  height:                 7vh;
+  margin-bottom:          0.5vh;
+  margin-left:            2.5%;
+  float:                  left;
+  border:					      	1px solid #000;
+	background-repeat: 			no-repeat;
+	background-position: 		right top;
+	background-size: 			  100% 100%;
+ 	box-sizing:					    border-box;
+  -moz-box-sizing:			  border-box;
+  -webkit-box-sizing:			border-box;
+  display:                none;
+}
+div#btnScrollDown {
+  width:                  95%;
+  height:                 10%;
+  overflow:               hidden;
+  margin-left:            2.5%;
+  margin-right:           2.5%;
+  margin-bottom:          1%;
+  background-color:       #00ff00;
+  clear:                  both;
+}
+
+input[type="button"]#btnup {
+  width:        100%;
+  height:        5%;
+  opacity:      0.5;
+}
+div#gamescreen {
+	width:				      100%;
+	height:				      90%;
+	background-color:	  #999;
+	margin:				      0;
+	padding:			      0;
+	float:			      	left;
+  display:            inline-block;
+}
+div#systemview {
+	width:				      100%;
+	height:				      90%;
+	margin:				      0;
+	padding:			      0;
+	float:			      	left;
+  background-color:   transparent;
+  display:            none;
+  overflow-x:         auto;
+  overflow-y:         hidden;
+}
+div#wrapper {
+  width:              100%;
+  height:             100%;
+  position:           relative;
+  white-space:        nowrap;
+}
+div.twobuttonmenu {
+  position:           relative;
+  width:              80%;
+  height:             60%;
+  top:                20%;
+  left:               10%;
+  background:         transparent;
+  padding:            0;
+}
+div.twobuttonmenu .button {
+  display:            block;
+  width:              100%;
+  height:             28%;
+  background-color:   #00ff00;
+  float:              left;
+  opacity:            0.5;
+  border:             0;
+  margin-bottom:      5%;
+  font-weight:        bold;
+}
+div.twobuttonmenu .button:hover {
+  opacity:            1.0;
+}
+div.planettab {
+  height:             90%;
+  width:              20%;
+  background-color:   transparent;
+  display:            inline-block;
+  text-align:         center;
+  position:           relative;
+}
+div.planetcaption {
+  font-family:        monospace;
+  font-size:          1.2em;
+  color:              #fff;
+  background-color:   transparent;
+  width:              100%;
+  height:             10%;
+}
+div.planetdisplay {
+  background-color:   #ff0000;
+  width:              100%;
+  height:             30vh;
+  background:         transparent url(../img/sysview/earth.png) 0 0 no-repeat;
+  background-size:    contain;
+}
+div.planetdisplay:hover {
+  filter:         saturate(2.0);
+  -webkit-filter: saturate(2.0);
+  -ms-filter:     saturate(2.0);
+  -o-filter:      saturate(2.0);
+}
+
+input[type="button"]#btndown {
+  width:        100%;
+  height:         5%;
+  opacity:      0.5;
+}
+div#btnOpenPanel {
+  background-color:   #ff00ff;
+  color:              #000;
+}
+div.panelcenter input[type="button"].btnClose {
+	display:			          inline-block;
+  background:             transparent;
+  position:               relative;
+  float:                  right;
+	background-image: 	    url("../img/btnClose.jpg");
+	width:				          23px;
+	height:				          23px;
+}
+div.container h3 {
+  display:                inline;
+}
+span#errormessage {
+  display:                block;
+  margin-top:             10%;
+}
+
+div.tile {
+	width:						      12.5%;
+	height:					      	20%;
+	margin:					      	0;
+	float:					      	left;
+	background-color:		   	#009900;
+	box-sizing:			    		border-box;
+	-moz-box-sizing:			  border-box;
+	-webkit-box-sizing:			border-box;
+  filter:                 saturate(1.0);
+  -webkit-filter:         saturate(1.0);
+  -ms-filter:             saturate(1.0);
+  -o-filter:              saturate(1.0);
+}
+div.image {
+	background-color: 			#fff;
+	background-repeat: 			no-repeat;
+	background-position: 		right top;
+	background-size: 			  100% 100%;
+}
+
+div.grass { background-image: url(../img/tiles/environment/grass.jpg); }
+div.rock { background-image: url(../img/tiles/environment/rock.jpg); }
+div.constructionsite { background-image: url(../img/tiles/buildings/constructionsite.jpg); }
+div.metalmine { background-image: url(../img/tiles/buildings/metalmine.jpg); }
+div.crystalmine { background-image: url(../img/tiles/buildings/crystalmine.jpg); }
+div.methanerefinery { background-image: url(../img/tiles/buildings/methanerefinery.jpg); }
+div.farm { background-image: url(../img/tiles/buildings/farm.jpg); }
+div.city { background-image: url(../img/tiles/buildings/city.jpg); }
+div.solarpanels { background-image: url(../img/tiles/buildings/solarpanels.jpg); }
+div.greenhouse { background-image: url(../img/tiles/buildings/greenhouse.jpg); }
+
+div.tile:hover {
+  outline:            2px solid #aa00ff;
+  outline-offset:     -2px;
+}
+
+/* PANEL */
+div#panelcontextmenu {
+  left:     15vw;
+  top:      -90vh;
+}
+input[type="button"].btnStandard {
+  background-color: #9900dd;
+}
+input[type="button"].btnStandard:hover {
+  background-color: #990099;
+}
+input[type="button"].btnStandard:active {
+  background-color: #440044;
+}
+
+/* ERROR PANEL */
+div#panelerror {
+  left:   30vw;
+  top:    -50vh;
+}
+
+ul.tablist {
+  padding:  0;
+  margin:   0;
+  width:    30vw;
+}
+li.buildingtab {
+  list-style-type:  none;
+  background-color: #ddd;
+  margin:           3%;
+  padding:          3%;
+}
+li.buildingtab:hover {
+  background-color: #fff;
+}
+input[type="range"].long {
+  width:            80%;
+}
+input[type="text"].short {
+  width:            10%;
+}
+/* FOOTER */
+footer {
+  height:       10%;
+  width:        100%;
+}
+
+input[type="button"]#populationallocation {
+  background-image: url(../img/ui/populationallocation.jpg);
+  height:           100%;
+  width:            130px;
+}
